@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="戸山流居合道会本部 - 子供から80代まで、誰でも始められる実戦的居合道">
+  <title>戸山流居合道会本部 - はじめてでも、一生を懸ける価値がある</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav id="navigation" class="nav">
+    <div class="nav-container">
+      <div class="nav-content">
+        <div class="nav-logo">
+          <img src="images/parts/ロゴ2.jpg" alt="戸山流居合道会本部" class="nav-logo-img">
+          <div class="nav-title">
+            <span class="nav-title-main">戸山流居合道会本部</span>
+            <span class="nav-title-sub">TOYAMA-RYU IAIDO</span>
+          </div>
+        </div>
+
+        <div class="nav-links">
+          <a href="#about" class="nav-link">戸山流とは</a>
+          <a href="#training" class="nav-link">稽古内容</a>
+          <a href="#locations" class="nav-link">道場案内</a>
+          <a href="#global" class="nav-link">グローバル</a>
+          <a href="#join" class="nav-link">入門案内</a>
+          <a href="#contact" class="nav-link">お問い合わせ</a>
+        </div>
+
+        <button id="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="メニュー">
+          <svg id="menu-icon" class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+          <svg id="close-icon" class="close-icon hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"/>
+            <line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="mobile-menu hidden">
+      <div class="mobile-menu-content">
+        <a href="#about" class="mobile-menu-link">戸山流とは</a>
+        <a href="#training" class="mobile-menu-link">稽古内容</a>
+        <a href="#locations" class="mobile-menu-link">道場案内</a>
+        <a href="#global" class="mobile-menu-link">グローバル</a>
+        <a href="#join" class="mobile-menu-link">入門案内</a>
+        <a href="#contact" class="mobile-menu-link">お問い合わせ</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section with Slider -->
+  <section class="hero">
+    <!-- Background Slides -->
+    <div class="hero-slide active" style="background-image: linear-gradient(rgba(38, 70, 83, 0.2), rgba(38, 70, 83, 0.3)), url('images/top/slide/集合写真.jpg');"></div>
+    <div class="hero-slide" style="background-image: linear-gradient(rgba(38, 70, 83, 0.2), rgba(38, 70, 83, 0.3)), url('images/top/slide/S__141836308_0.jpg');"></div>
+    <div class="hero-slide" style="background-image: linear-gradient(rgba(38, 70, 83, 0.2), rgba(38, 70, 83, 0.3)), url('images/top/slide/S__141836309_0.jpg');"></div>
+    <div class="hero-slide" style="background-image: linear-gradient(rgba(38, 70, 83, 0.2), rgba(38, 70, 83, 0.3)), url('images/top/slide/S__141836311_0.jpg');"></div>
+    
+    <!-- Single Content Layer (shared across all slides) -->
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="hero-title">
+          <span class="hero-title-line">はじめてでも、</span>
+          <span class="hero-title-line hero-title-highlight">一生を懸ける価値がある。</span>
+        </h1>
+        <p class="hero-subtitle">子供から80代まで。誰でも気軽にはじめられます。</p>
+      </div>
+      <div class="hero-buttons">
+        <a href="https://forms.gle/zSfu2abGqBSxQKde6" target="_blank" rel="noopener noreferrer" class="btn btn-primary">まずは見学・体験から</a>
+        <button class="btn btn-secondary">詳しく知る</button>
+      </div>
+    </div>
+
+    <!-- Navigation Arrows -->
+    <button class="hero-prev" aria-label="前のスライド">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polyline points="15 18 9 12 15 6"/>
+      </svg>
+    </button>
+    <button class="hero-next" aria-label="次のスライド">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polyline points="9 18 15 12 9 6"/>
+      </svg>
+    </button>
+
+    <!-- Slide Indicators -->
+    <div class="hero-indicators">
+      <button class="hero-indicator active" data-slide="0" aria-label="スライド1"></button>
+      <button class="hero-indicator" data-slide="1" aria-label="スライド2"></button>
+      <button class="hero-indicator" data-slide="2" aria-label="スライド3"></button>
+      <button class="hero-indicator" data-slide="3" aria-label="スライド4"></button>
+    </div>
+
+    <div class="hero-scroll">
+      <svg class="scroll-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polyline points="6 9 12 15 18 9"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Welcome Section -->
+  <section class="section welcome-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">あなたも今日から始められます</h2>
+        <div class="section-divider"></div>
+        <p class="section-description">
+          「自分には難しいかも...」そんな不安は必要ありません。<br>
+          戸山流居合道会本部は、誰もが気軽に始められ、深く学べる居合道です。
+        </p>
+      </div>
+
+      <div class="grid grid-4">
+        <div class="card">
+          <h3 class="card-title">初心者大歓迎</h3>
+          <p class="card-text">経験ゼロから始める方がほとんど。基礎から丁寧に指導します。</p>
+        </div>
+
+        <div class="card">
+          <h3 class="card-title">幅広い年齢層</h3>
+          <p class="card-text">小学生からシニアまで、様々な世代が共に学んでいます。</p>
+        </div>
+
+        <div class="card">
+          <h3 class="card-title">自分のペースで</h3>
+          <p class="card-text">週1回から無理なく。ライフスタイルに合わせて続けられます。</p>
+        </div>
+
+        <div class="card">
+          <h3 class="card-title">見学・体験歓迎</h3>
+          <p class="card-text">まずは雰囲気を感じてください。体験稽古も随時受付中。</p>
+        </div>
+      </div>
+
+      <div class="faq-section">
+        <h3 class="faq-title">よくあるご質問</h3>
+        <div class="faq-list">
+          <div class="faq-item">
+            <h4 class="faq-question"><span class="faq-q">Q.</span>全くの初心者ですが大丈夫ですか？</h4>
+            <p class="faq-answer"><span class="faq-a">A.</span>はい、大丈夫です。会員の約70%が未経験からスタートしています。基礎から丁寧に指導しますので、安心してご参加ください。</p>
+          </div>
+          <div class="faq-item">
+            <h4 class="faq-question"><span class="faq-q">Q.</span>体力に自信がないのですが...</h4>
+            <p class="faq-answer"><span class="faq-a">A.</span>居合道は激しい運動ではなく、正確な動作と集中力を養う武道です。ご自身のペースで無理なく続けられます。</p>
+          </div>
+          <div class="faq-item">
+            <h4 class="faq-question"><span class="faq-q">Q.</span>週に何回くらい稽古すればいいですか？</h4>
+            <p class="faq-answer"><span class="faq-a">A.</span>週1回から参加できます。多くの会員は週1〜2回のペースで、仕事や家庭と両立しながら続けています。</p>
+          </div>
+          <div class="faq-item">
+            <h4 class="faq-question"><span class="faq-q">Q.</span>何歳まで続けられますか？</h4>
+            <p class="faq-answer"><span class="faq-a">A.</span>年齢制限はありません。80代で現役の会員もいらっしゃいます。生涯を通じて学び続けられる武道です。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cta-section">
+        <a href="https://forms.gle/zSfu2abGqBSxQKde6" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large">まずは見学・体験から始める</a>
+        <p class="cta-text">お電話・メールでお気軽にお問い合わせください</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">戸山流とは</h2>
+        <div class="section-divider"></div>
+        <p class="section-description">
+          年齢や経験は関係ありません。<br>
+          初心者から達人まで、共に学び、共に成長する場所です。
+        </p>
+      </div>
+
+      <div class="grid grid-4">
+        <div class="principle-card">
+          <h3 class="principle-title">誰でも始められる</h3>
+          <p class="principle-text">子供から80代まで、年齢・性別・体力を問わず参加可能。初心者には基礎から丁寧に指導します。</p>
+        </div>
+
+        <div class="principle-card">
+          <h3 class="principle-title">奥深く極められる</h3>
+          <p class="principle-text">誰でも始めやすいですが、奥が深い伝統の技は、生涯をかけて追求できる深さがあります。</p>
+        </div>
+
+        <div class="principle-card">
+          <h3 class="principle-title">仲間と成長できる</h3>
+          <p class="principle-text">和気あいあいとした雰囲気で、年齢や性別を越えた交流が生まれます。</p>
+        </div>
+
+        <div class="principle-card">
+          <h3 class="principle-title">続けやすい環境</h3>
+          <p class="principle-text">誰でも気軽に稽古に取り組めるので、あなたのペースに合わせて、無理なく続けられます。</p>
+        </div>
+      </div>
+
+      <div class="timeline-section">
+        <h3 class="timeline-title">歴史の系譜</h3>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-year">1925年～終戦</div>
+            <div class="timeline-content">
+              <p class="timeline-text">陸軍戸山学校にて実戦的な軍刀術として発展</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">1976年</div>
+            <div class="timeline-content">
+              <p class="timeline-text">戸山流居合道振興会 設立</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">1980年</div>
+            <div class="timeline-content">
+              <p class="timeline-text">大日本戸山流居合道会 に改称</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">2015年</div>
+            <div class="timeline-content">
+              <p class="timeline-text">戸山流居合道会本部としてNPO法人化</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">現在</div>
+            <div class="timeline-content">
+              <p class="timeline-text">英国にも支部ができ、普及が進む</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="quote-section">
+        <p class="quote-text">
+          「受け継がれた技、開かれた門。<br>
+          <span class="quote-highlight">誰もが始められる、本物の武道。</span>」
+        </p>
+        <div class="quote-cta">
+          <a href="https://forms.gle/zSfu2abGqBSxQKde6" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large">見学・体験から始める</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="images/parts/ロゴ2.jpg" alt="戸山流居合道会本部" class="footer-logo-img">
+            <div>
+              <h3 class="footer-title">戸山流居合道会本部</h3>
+              <p class="footer-subtitle">TOYAMA-RYU IAIDO</p>
+            </div>
+          </div>
+          <p class="footer-description">
+            特定非営利活動法人 戸山流居合道会本部。京都府京田辺市を発祥の地とし、陸軍戸山学校を源流とする実戦的居合の真髄を追求する武道団体です。
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h4 class="footer-heading">リンク</h4>
+          <ul class="footer-list">
+            <li><a href="#about" class="footer-link">戸山流とは</a></li>
+            <li><a href="#training" class="footer-link">稽古内容</a></li>
+            <li><a href="#locations" class="footer-link">道場案内</a></li>
+            <li><a href="#global" class="footer-link">グローバル</a></li>
+            <li><a href="#join" class="footer-link">入門案内</a></li>
+          </ul>
+        </div>
+
+        <div id="contact" class="footer-contact">
+          <h4 class="footer-heading">お問い合わせ</h4>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item">
+              <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+              <span>toyamaryuhonnbu@gmail.com</span>
+            </li>
+            <li class="footer-contact-item">
+              <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              <span>京都府京田辺市</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2025 戸山流居合道会本部. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#privacy" class="footer-legal-link">プライバシーポリシー</a>
+          <a href="#terms" class="footer-legal-link">利用規約</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
